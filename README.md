@@ -40,7 +40,6 @@ data\
     │   ├── trainval.lst
     │   └── val.lst
 ```
-* Check if the paths contained in lists of `data/list` are correct for dataset images.
 
 ### Training
 
