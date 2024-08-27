@@ -14,31 +14,32 @@ You can download the [Kaggle](https://www.kaggle.com/datasets/carlolepelaars/cam
 * You need to download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets, unzip them and put the files in the `data` folder with following structure.
 
 ```
-data\ 
-├── cityscapes
-    ├── gtCoarse
-    │   ├── train
-    │   ├── train_extra
-    │   └── val
-    ├── gtFine
-    │   ├── test
-    │   ├── train
-    │   └── val
-    ├── leftImg8bit
-    │   ├── test
-    │   ├── train
-    │   └── val
-    ├── list
-    ├── cityscapes
-    │   ├── test.lst
-    │   ├── train.lst
-    │   ├── trainval.lst
-    │   └── val.lst
-    ├── Camvid
-    │   ├── test.lst
-    │   ├── train.lst
-    │   ├── trainval.lst
-    │   └── val.lst
+$SEG_ROOT/data\ 
+├── Camvid
+│       ├── images
+│       ├── labels
+
+│    ├── cityscapes
+│        ├── gtFine
+│            ├── test
+│            ├── train
+│            ├── val
+│     ── ── leftImg8bit
+│             ├── test
+│             ├── train
+│             └── val
+│    ├── list
+         ├── Camvid
+│          ├── test.lst
+│          ├── train.lst
+│          ├── trainval.lst
+│          └── val.lst
+│       ├── cityscapes
+│          ├── test.lst
+│          ├── train.lst
+│          ├── trainval.lst
+│          └── val.lst
+   
 ```
 
 ### Training
