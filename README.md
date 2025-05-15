@@ -4,6 +4,14 @@
 
 You need to download the Cityscapesdatasets. and rename the folder cityscapes, then put the data under data folder.
 
+
+# Clone this repository
+
+```
+git clone https://github.com/mohamedac29/P2AT
+cd P2AT
+```
+
 ### Datasets Preparation
 
 ## 1. Cavmvid Dataset
