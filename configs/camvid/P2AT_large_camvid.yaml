@@ -17,7 +17,7 @@ DATASET:
 MODEL:
   NAME: p2at_l
   NUM_OUTPUTS: 2
-  PRETRAINED: "checkpoints/cityscapes/P2AT_L_Cityscapes_train.pth"
+  PRETRAINED: "checkpoints/cityscapes/P2AT_Large_Cityscapes_train.pth"
 
 LOSS:
   USE_OHEM: true
@@ -30,7 +30,7 @@ TRAIN:
   - 960
   - 720
   BASE_SIZE: 960
-  BATCH_SIZE_PER_GPU: 6
+  BATCH_SIZE_PER_GPU: 4
   SHUFFLE: true
   BEGIN_EPOCH: 0
   END_EPOCH: 140

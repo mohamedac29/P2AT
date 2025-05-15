@@ -15,15 +15,14 @@ DATASET:
   TRAIN_SET: 'list/camvid/trainval.lst'
   NUM_CLASSES: 11
 MODEL:
-  NAME: p2at_l
+  NAME: p2at_s
   NUM_OUTPUTS: 2
-  PRETRAINED: "checkpoints/cityscapes/P2AT_Large_Cityscapes_trainval.pth"
-
+  PRETRAINED: "checkpoints/cityscapes/P2AT_small_Cityscapes_trainval.pth"
 LOSS:
   USE_OHEM: true
   OHEMTHRES: 0.9
   OHEMKEEP: 131072
-  BALANCE_WEIGHTS: [1.0, 1.0]
+  BALANCE_WEIGHTS: [0.4, 1.0]
   AUX_WEIGHTS: 1.0
 TRAIN:
   IMAGE_SIZE:
@@ -36,7 +35,7 @@ TRAIN:
   END_EPOCH: 140
   RESUME: false
   OPTIMIZER: sgd
-  LR: 0.004
+  LR: 0.001
   WD: 0.0005
   EPS: 1e-08
   BETAS: (0.9, 0.999)
