@@ -1,0 +1,1 @@
+To save the checkpoints, ensure they are stored in a secure and accessible location.
