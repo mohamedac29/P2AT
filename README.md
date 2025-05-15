@@ -1,5 +1,6 @@
-## P2AT: Pyramid Pooling Axial Transformer for Real-time Semantic Segmentation  [[Arxiv]](https://arxiv.org/abs/2310.15025)
-## The paper has been accepted at Expert Systems with Applications [ESWA](https://www.sciencedirect.com/science/article/abs/pii/S0957417424014775)
+## P2AT: Pyramid Pooling Axial Transformer for Real-time Semantic Segmentation  [[Arxiv]](https://arxiv.org/abs/2310.15025) | ESWA [ESWA](https://www.sciencedirect.com/science/article/abs/pii/S0957417424014775)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/p2at-pyramid-pooling-axial-transformer-for/real-time-semantic-segmentation-on-camvid)](https://paperswithcode.com/sota/real-time-semantic-segmentation-on-camvid?p=p2at-pyramid-pooling-axial-transformer-for)
 
 You need to download the Cityscapesdatasets. and rename the folder cityscapes, then put the data under data folder.
 
