@@ -1,5 +1,5 @@
-# P2AT: Pyramid Pooling Axial Transformer for Real-time Semantic Segmentation  [[Arxiv]](https://arxiv.org/abs/2310.15025)
-# The paper has been accepted at Expert Systems with Applications [ESWA](https://www.sciencedirect.com/science/article/abs/pii/S0957417424014775)
+## P2AT: Pyramid Pooling Axial Transformer for Real-time Semantic Segmentation  [[Arxiv]](https://arxiv.org/abs/2310.15025)
+## The paper has been accepted at Expert Systems with Applications [ESWA](https://www.sciencedirect.com/science/article/abs/pii/S0957417424014775)
 
 You need to download the Cityscapesdatasets. and rename the folder cityscapes, then put the data under data folder.
 
@@ -48,3 +48,5 @@ $SEG_ROOT/data\
 ````bash
 python train.py --cfg configs/camvid/p2at_small_camvid.yaml GPUS (0,1) TRAIN.BATCH_SIZE_PER_GPU 4
 ````
+
+
