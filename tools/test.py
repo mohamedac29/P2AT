@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
 import _init_paths
-import models
+from builders import build_model
 import datasets
 from configs import config
 from configs import update_config
@@ -47,7 +47,10 @@ def main():
     cudnn.enabled = config.CUDNN.ENABLED
 
     # build model
-    model = model = models.fpnet.get_seg_model(config, imgnet_pretrained=True)
+    model = build_model("P2AT",
+                        mode="test",
+                        name_or_cfg=config,
+                        num_classes=config.DATASET.NUM_CLASSES)
 
     if config.TEST.MODEL_FILE:
         model_state_file = config.TEST.MODEL_FILE
