@@ -16,7 +16,7 @@ from utils.function import testval, test
 from utils.utils import create_logger
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Train segmentation network')
+    parser = argparse.ArgumentParser(description='Train P2AT Segmentation Network')
 
     parser.add_argument('--cfg',
                         help='experiment configure file name',
