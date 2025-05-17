@@ -20,7 +20,7 @@ def parse_args():
 
     parser.add_argument('--cfg',
                         help='experiment configure file name',
-                        default="experiments/cityscapes/P2AT_small_camvid_trainval.yaml",
+                        default="experiments/camvid/P2AT_small_camvid_trainval.yaml",
                         type=str)
     parser.add_argument('opts',
                         help="Modify config options using the command-line",
