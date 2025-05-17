@@ -55,7 +55,7 @@ $SEG_ROOT/data\
 
 * For instance, train the P2AT-S on Camvid dataset with batch size of 8 on 2 GPUs:
 ````bash
-python train.py --cfg configs/camvid/p2at_small_camvid.yaml GPUS (0,1) TRAIN.BATCH_SIZE_PER_GPU 4
+python tools/train.py --cfg configs/camvid/p2at_small_camvid.yaml GPUS (0,1) TRAIN.BATCH_SIZE_PER_GPU 4
 ````
 
 
