@@ -59,3 +59,28 @@ python train.py --cfg configs/camvid/p2at_small_camvid.yaml GPUS (0,1) TRAIN.BAT
 ````
 
 
+### Citation
+
+If you find this work useful in your research, please consider citing.
+
+```
+@article{elhassan2024p2at,
+  title={P2AT: Pyramid pooling axial transformer for real-time semantic segmentation},
+  author={Elhassan, Mohammed AM and Zhou, Changjun and Benabid, Amina and Adam, Abuzar BM},
+  journal={Expert Systems with Applications},
+  volume={255},
+  pages={124610},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
+```
+@article{elhassan2024csnet,
+  title={CSNet: Cross-Stage Subtraction Network for Real-Time Semantic Segmentation in Autonomous Driving},
+  author={Elhassan, Mohammed AM and Zhou, Changjun and Zhu, Donglin and Adam, Abuzar BM and Benabid, Amina and Khan, Ali and Mehmood, Atif and Zhang, Jun and Jin, Hu and Jeon, Sang-Woon},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2024},
+  publisher={IEEE}
+}
+```
