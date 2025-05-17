@@ -15,7 +15,7 @@ cd P2AT
 ### Datasets Preparation
 
 ## 1. Cavmvid Dataset
-You can download the [Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
+You can download the Camvid dataset from [Kaggle](https://www.kaggle.com/datasets/carlolepelaars/camvid)
 
 ## Citysscapes Dataset
 * You need to download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets, unzip them and put the files in the `data` folder with following structure.
