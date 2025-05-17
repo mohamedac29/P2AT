@@ -1,7 +1,3 @@
-# ------------------------------------------------------------------------------
-# Modified based on https://github.com/HRNet/HRNet-Semantic-Segmentation
-# ------------------------------------------------------------------------------
-
 import logging
 import os
 import time
