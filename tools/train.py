@@ -16,7 +16,7 @@ import torch.optim
 from tensorboardX import SummaryWriter
 
 import _init_paths
-import models
+from builders import build_model
 import datasets
 from configs import config
 from configs import update_config
@@ -97,7 +97,10 @@ def main():
             logger.warning("GPUs specified in config, but CUDA is not available. Using CPU.")
         device = torch.device("cpu")
 
-    model = models.fpnet.get_seg_model(config)
+    model = build_model("P2AT",
+                        mode="train",
+                        name_or_cfg=config,
+                        num_classes=config.DATASET.NUM_CLASSES)
     model = FullModel(model, sem_criterion, b_criterion)
 
     if use_cuda and len(gpus) > 1:
