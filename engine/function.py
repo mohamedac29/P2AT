@@ -8,14 +8,12 @@ from tqdm import tqdm
 import torch
 from torch.nn import functional as F
 
-from utils.utils import AverageMeter
+from utils.logger import AverageMeter
 from utils.utils import get_confusion_matrix
 from utils.learning_rate import adjust_learning_rate
 
-import torch
 from torch.cuda.amp import autocast, GradScaler
 
-# scaler = GradScaler()
 
 
 def train(config, epoch, num_epoch, epoch_iters, base_lr,
