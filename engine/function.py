@@ -10,7 +10,7 @@ from torch.nn import functional as F
 
 from utils.utils import AverageMeter
 from utils.utils import get_confusion_matrix
-from utils.utils import adjust_learning_rate
+from utils.learning_rate import adjust_learning_rate
 
 import torch
 from torch.cuda.amp import autocast, GradScaler
