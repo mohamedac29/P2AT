@@ -20,7 +20,7 @@ from builders import build_model
 import datasets
 from configs import config
 from configs import update_config
-from utils.criterion import CrossEntropy, OhemCrossEntropy, BoundaryLoss
+from utils.criterion import CrossEntropyLoss, OHEMCrossEntropyLoss, BoundaryDiceLoss
 from utils.function import train, validate
 from utils.utils import create_logger, FullModel
 
@@ -68,15 +68,15 @@ def main():
 
      # criterion
     if config.LOSS.USE_OHEM:
-        sem_criterion = OhemCrossEntropy(ignore_label=config.TRAIN.IGNORE_LABEL,
+        sem_criterion = OHEMCrossEntropyLoss(ignore_label=config.TRAIN.IGNORE_LABEL,
                                         thres=config.LOSS.OHEMTHRES,
                                         min_kept=config.LOSS.OHEMKEEP,
                                         weight=train_dataset.class_weights)
     else:
-        sem_criterion = CrossEntropy(ignore_label=config.TRAIN.IGNORE_LABEL,
+        sem_criterion = CrossEntropyLoss(ignore_label=config.TRAIN.IGNORE_LABEL,
                                     weight=train_dataset.class_weights)
         
-    b_criterion = BoundaryLoss()
+    b_criterion = BoundaryDiceLoss()
 
     # cudnn related setting
     cudnn.benchmark = config.CUDNN.BENCHMARK
