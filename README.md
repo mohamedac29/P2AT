@@ -2,8 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/p2at-pyramid-pooling-axial-transformer-for/real-time-semantic-segmentation-on-camvid)](https://paperswithcode.com/sota/real-time-semantic-segmentation-on-camvid?p=p2at-pyramid-pooling-axial-transformer-for)
 
-You need to download the Cityscapesdatasets. and rename the folder cityscapes, then put the data under data folder.
-
+You need to download the Cityscapes datasets. and rename the folder cityscapes, then put the data under data folder.
 
 # Clone this repository
 
