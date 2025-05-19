@@ -1,5 +1,5 @@
 from models.P2AT import P2AT
-from models.CSNet import CSNet
+#from models.CSNet import CSNet
 
 def build_model(model_type, mode, name_or_cfg, num_classes=None):
     """
@@ -16,8 +16,8 @@ def build_model(model_type, mode, name_or_cfg, num_classes=None):
     """
     if model_type == 'P2AT':
         ModelClass = P2AT
-    elif model_type == 'CSNet':
-        ModelClass = CSNet
+    #elif model_type == 'CSNet':
+    #    ModelClass = CSNet
     else:
         raise ValueError(f"Unknown model type: {model_type}")
 
