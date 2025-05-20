@@ -58,6 +58,13 @@ python tools/train.py --cfg configs/camvid/p2at_small_camvid.yaml GPUS (0,1) TRA
 ````
 
 
+* To evaluate the P2AT-S on Camvid set:
+
+````bash
+python tools/eval.py --cfg configs/camvid/p2at_small_camvid.yaml \
+                          TEST.MODEL_FILE checkpoints/camvid/p2at_small_Camvid.pth \
+                          DATASET.TEST_SET list/camvid/test.lst
+````
 ### Citation
 
 If you find this work useful in your research, please consider citing.
